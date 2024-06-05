@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import Footer from './Components/Header/Footer';
+import Header from './Components/Header/Header';
+import Caraousol from './Components/Header/Home/Caraousol';
+import Founder from './Components/Header/Home/Founder';
+import GetStarted from './Components/Header/Home/GetStartes';
+import Hero from './Components/Header/Home/Hero';
+import KeyProblem from './Components/Header/Home/KeyProblem';
+import Review from './Components/Header/Home/Review';
+import Target from './Components/Header/Home/Target';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Header />
+    <Hero />
+    <KeyProblem />  
+    {/* <KeyMetric /> */}
+    <Review />
+    <Caraousol />
+    <Target />
+    <Founder />
+    <GetStarted />
+    <Footer />
     </div>
   );
 }
